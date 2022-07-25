@@ -1,0 +1,33 @@
+
+.notes-container-main{
+
+    .notes-container{
+        position: relative;
+        min-height: 100vh;
+        overflow: hidden;
+
+        background: #ece9e6; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #ece9e6, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #ece9e6, #ffffff);
+
+        .sidebar-container{
+            position: absolute;
+            width: 100%;
+            justify-content: center;
+            bottom: 10px;
+        }
+
+        .btn-sidebar-container{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            bottom: 65px;
+        }
+
+    }
+
+    .custom-edit-view-container input{
+        padding: 8px;
+    }
+}

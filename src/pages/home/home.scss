@@ -1,0 +1,11 @@
+.home {
+    display: flex; 
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #ffffff;
+    min-height: 100vh;
+
+    .main-container{
+        margin: 25px;
+    }
+}

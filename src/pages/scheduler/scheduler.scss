@@ -1,0 +1,65 @@
+
+.scheduler-container-main{
+
+    .scheduler-container{
+        display: flex;
+        min-height: 100vh;
+        overflow: hidden;
+
+        background: #ece9e6; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #ece9e6, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #ece9e6, #ffffff);
+
+        .sidebar-container{
+            position: absolute;
+            width: 100%;
+            justify-content: center;
+            bottom: 10px;
+        }
+
+        .btn-sidebar-container{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            bottom: 65px;
+        }
+
+        .events-container{
+            max-height: 50vh;
+            margin: 100px 20px;
+            padding: 30px;
+            border-radius: 3px;
+            border: solid 1px grey;
+
+          
+            padding: 0 10px;
+            border: 1px solid #ccc;
+            background: #eee;
+            overflow-y: scroll;
+        }
+
+         button{
+            padding: 5px 10px;
+        }
+    }
+}
+
+.fullcalendar-container{
+
+    flex-grow: 1;
+    padding: 3em;
+}
+      
+.fc { /* the calendar root */
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 500px;
+}
+
+#external-events .fc-event {
+    margin: 1em 0;
+    cursor: move;
+    border: solid 1px grey;
+  }
+  

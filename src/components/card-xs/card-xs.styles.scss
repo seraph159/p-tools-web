@@ -1,0 +1,174 @@
+.card-xs-main-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: 110px;
+    grid-gap: 5px;
+    user-select: none; 
+    margin: 25px;
+
+
+    .card-xs-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .card-xs-container-inner{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        .card-xs-body{
+
+            display: flex;
+            flex-wrap: wrap;
+            height: 50px;
+            width: 50px;
+            background:rgba(0,0,0,0.3);
+            border-radius: 30%;
+            border: 2px solid #878a87;
+
+            .card-xs-inner{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: bold;
+                height: 20px;
+                width: 20px;
+                margin: 2.5px;
+                border-radius: 100%;
+                background: rgba(244, 246, 244, 0.8);
+
+            }
+
+        }
+    
+    }
+
+    .card-xs-title{
+        text-align: center;
+        line-height: 1;
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+    
+}
+
+.card-xs-container-inner:hover{
+    border-color: rgb(30, 129, 231) !important;
+    text-shadow: 0px 5px 5px rgba(30, 129, 231,0.3);
+
+    .card-xs-body{
+        border-color: rgb(30, 129, 231) !important;
+    }
+}
+
+
+
+.colist-modal-container{
+
+    display: flex;
+    flex-direction: column;
+
+    margin: 2px;
+
+
+    .colist-body{
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        margin: 5px;
+        border-radius: 3px;
+        border: solid 1px #4976c3;
+        
+
+        .colist-inner-title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            border-right: solid 1px #4976c3;;
+            font-weight: bolder;
+            font-size: xx-large;
+            
+        }
+
+        .colist-inner-middle{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .colist-inner-last{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+
+            .edit-btn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1px;
+                margin: 1px;
+                border-radius: 3px;
+                background-color: #7f8c8d;
+                color: white;
+                width: 100%;
+            }
+
+            .del-btn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1px;
+                margin: 1px;
+                border-radius: 3px;
+                background-color: #d9534f;
+                color: white;
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+button[editext='edit-button'] {
+    display: none;
+  }
+
+.custom-edit-view-container input{
+padding: 0px;
+outline: none;
+}
+
+button[editext='cancel-button'], button[editext='save-button'] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    width: 23px;
+    padding: 0px;
+}
+
+.custom-edit-view-container{
+    display: flex;
+    margin: 2px;
+}
+
+.btn-modal-new-item{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0px;
+}
+
+.btn-modal-new-item button{
+    padding: 5px 10px;
+}
+
+.colist-modal-container *{
+    box-sizing: border-box;
+}
