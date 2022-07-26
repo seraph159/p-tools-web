@@ -31,3 +31,13 @@
         padding: 8px;
     }
 }
+
+button[editext='cancel-button'], button[editext='save-button'] {
+    width: 25px;
+    height: 25px;
+}
+
+.custom-edit-view-container{
+    display: flex;
+    align-items: center;
+}

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "./sidebar.styles.scss";
 import { BiNetworkChart, BiAnalyse } from "react-icons/bi";
-import { Navigate, Link} from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
 export default class Sidebar extends Component {
 
